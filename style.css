@@ -1,0 +1,307 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  min-width: 400px;
+  font-family: "Manrope", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+header {
+  background-image: url("./Landscape.jpeg");
+  background-position: center;
+  background-size: cover;
+  height: 80vh;
+  position: relative;
+  padding: 2rem 7rem;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("./Landscape.jpeg") center/cover no-repeat;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  align-items: center;
+  height: 120px;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 550;
+}
+
+ul {
+  list-style: none;
+}
+
+nav {
+  display: flex;
+  gap: 1.8rem;
+}
+
+nav ul {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+nav ul a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+
+.action_btn {
+  padding: 1rem 1.5rem;
+  border: 0px;
+  background-color: white;
+}
+
+.burger_btn {
+  all: unset;
+  display: none;
+  width: 2rem;
+  height: 2rem;
+}
+.burger_btn img {
+  width: 100%;
+}
+
+.header_closing {
+  position: absolute;
+  bottom: 6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  width: 500px;
+}
+
+.header_closing h1 {
+  color: white;
+}
+
+.action_btn_2 {
+  padding: 1rem 1.5rem;
+  border: 0px;
+  background-color: white;
+  width: 10rem;
+  text-align: center;
+}
+
+.mission {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 3rem 7rem;
+  background-color: rgb(224, 224, 219);
+  gap: 2rem;
+}
+
+.mission h3 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.mission h4 {
+  font-weight: 200;
+  font-size: 1.3rem;
+  line-height: 1.6;
+}
+
+.about_info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 3rem 7rem;
+  gap: 4rem;
+}
+
+.about_img {
+  width: 100%;
+  background-position: center;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about_info_card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.about_info_card h3 {
+  font-size: 2.5rem;
+  font-weight: 530;
+}
+
+.about_info_card h4 {
+  font-size: 1rem;
+}
+
+.about_info_btn {
+  padding: 1rem;
+  width: 10rem;
+  border: 0px;
+  background-color: rgb(36, 53, 81);
+  color: white;
+}
+
+.quote {
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  background-image: url(./landscape_3.jpeg);
+  background-size: cover;
+  padding: 15rem 20rem;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(./landscape_3.jpeg) center/cover no-repeat;
+  gap: 1.5rem;
+  justify-content: center;
+}
+.quote h3 {
+  color: white;
+  font-weight: 600;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.quote h4 {
+  color: white;
+  font-weight: 550;
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.sign_up {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 3rem 7rem;
+  gap: 2rem;
+}
+
+.sign_up_form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.sign_up div h2 {
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.sign_up_form p {
+  font-size: 1.1rem;
+  font-weight: 200;
+}
+
+.sign_up_input {
+  padding: 0.8rem 2rem;
+  text-align: center;
+  border: 1px solid rgb(223, 217, 217);
+}
+
+.sign_up_btn {
+  padding: 0.8rem 1rem;
+  border: 0px;
+  background-color: rgb(36, 53, 81);
+  color: white;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr;
+  padding: 3rem 1rem;
+  background-color: rgb(42, 40, 41);
+  color: white;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+footer ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+footer a {
+  color: white;
+}
+
+@media only screen and (max-width: 1150px) {
+  .burger_btn {
+    display: inline-block;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .header_closing {
+    width: 60%;
+    font-size: 0.9rem;
+  }
+
+  .mission {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .about_info {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .about_info_card {
+    order: 2;
+  }
+
+  .order_2 {
+    order: 1;
+  }
+  .quote {
+    padding: 13rem 5rem;
+  }
+
+  .quote h3 {
+    font-size: 1.4rem;
+  }
+
+  .quote h4 {
+    font-size: 1.1rem;
+  }
+
+  .sign_up {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+  }
+
+  .number_1 {
+    order: 3;
+  }
+
+  .number_2 {
+    order: 1;
+  }
+
+  .number_3 {
+    order: 2;
+  }
+}
